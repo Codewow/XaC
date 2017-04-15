@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+        font-size: 1.1em;
+        background-color: #eee;
+}
+nav{
+    background-color: #fff;
+    font-size: 1.1em;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li{
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5%;
+    display: inline-block;
+}
+nav ul li ul{
+    display: none;
+}
+nav ul li:last-child{ 
+    float: right;
+    margin-right: 10%;
+}
+.homepage,.welcome,.joinus{
+    padding: 5%;
+}
+.welcome{
+}
+.joinus{
+}
