@@ -3,8 +3,19 @@
     padding: 0;
 }
 html{
-        font-size: 1.1em;
-        background-color: #eee;
+    font-size: 1.1em;
+    background-color: #eee;
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+body,html,wrapper{
+    height: 100%;
+}
+wrapper{
+    display: block;
+    position: relative;
+    height: auto;
 }
 nav{
     background-color: #fff;
@@ -18,18 +29,170 @@ nav ul li{
     margin: 10px 10px 10px 10px;
     border-radius: 5%;
     display: inline-block;
+    background-color: rgba(0,0,0,0.1);
+    color: black;
+}
+nav ul li a:link{
+    text-decoration: none;
+}
+nav ul li:hover{
+    
 }
 nav ul li ul{
+    position: absolute;
     display: none;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px black;
 }
-nav ul li:last-child{ 
+nav ul li ul a{
+    display: block;
+    width: auto
+}
+nav ul li ul li{
+    display: block;
+    width: 125px;
+    float: none !important;
+}
+#info:hover{
+    cursor: pointer;
+}
+.log-reg{ 
     float: right;
     margin-right: 10%;
+}
+wrapper{
+    display: block;
+    margin-bottom: -100px;
 }
 .homepage,.welcome,.joinus{
     padding: 5%;
 }
 .welcome{
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
 }
 .joinus{
+    font-size: 3em;
+    color: #55A441;
+    text-align: center;
+}
+.discord{
+    display: block;
+    width: 435px;
+    height: auto;
+    margin: 0 auto;
+}
+.events{
+    width: 75%;
+    margin: 1% auto;
+    background-color: rgba(255,255,255,0.3);
+    color: white;
+    height: 85vh;
+    max-height: 85vh;
+    overflow: auto;
+}
+.calendar{
+    margin: 0 auto;
+    padding: 10px;
+}
+.cal-item{
+    padding: 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    background-color: rgba(85, 164, 65,0.75);
+    border-radius: 5px;
+    box-shadow: inset 0 0 15px black;
+}
+
+.cal-datetime,.cal-details{
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
+}
+.cal-date{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.cal-details p{
+    max-width: 1000px;
+}
+.cal-datetime span{
+    display: block;
+}
+.cal-info{
+    text-align: center;
+}
+.aboutus,.staff{
+    color: white;
+    width: 50%;
+    margin: 3px auto;
+    padding: 1%;
+    background-color: rgba(0,0,0,0.4);
+}
+.aboutus h1{
+    text-align: center;
+}
+.aboutus hr{
+    width: 35%;
+    margin: 0 auto;
+}
+.aboutus p{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+}
+.staff h1,.staff h2{
+    text-align: center;
+}
+.staff hr{
+    width: 50%;
+    margin: auto;
+}
+#owner{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+}
+#owner *{
+    display: block;
+}
+#owner img{
+    margin: 5px auto;
+}
+#owner span{
+    font-size: 1.5em
+}
+#owner span,
+#owner p{
+    padding: 5px;
+}
+#admins{
+    
+}
+.admin-item{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 2% 1%;
+    margin: 1% 0;
+    text-align: center;
+}
+.admin-item span{
+    font-size: 1.6em;
+}
+content{
+    display: block;
+    position: relative;
+    height: ;
+    padding-bottom: 1%;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+    background-color: #ccc;
+    bottom: 0;
 }

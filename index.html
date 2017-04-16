@@ -3,37 +3,45 @@
     <head>
     <title></title>
     <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
     </head>
     <body>
+        <wrapper>
         <nav>
             <img src="">
             <ul>
-                <li>Home</li>
-                <li>Info
-                    <ul>
-                        <li>XaC?</li>
-                        <li>About XaC</li>
-                        <li>Extra Info</li>
-                        <li>Commands</li>        
+                <li><a href="">Home</a></li>
+                <li id="info">Info
+                    <ul id="info-dropdown">
+                        <a href=""><li>XaC?</li></a>
+                        <a href=""><li>About XaC</li></a>
+                        <a href=""><li>Extra Info</li></a>
+                        <a href=""><li>Commands</li></a>        
                     </ul>
                 </li>
-                <li>Events</li>
-                <li>Forum</li>
-                <li class="log-reg">Login/Register</li>
+                <li><a href="">Events</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Forum</a></li>
+                <li class="log-reg"><a href="">Login/Register</a></li>
             </ul>
         </nav>
-        <content>
+            <content>
             <div class="homepage">
                 <div class="welcome">
                     <h1>Welcome to XaC!</h1>
-                    <p>Welcome to XaC! The No. 1 Discord server dedicated to Xbox Gamers. Find all XaC information here, including a gallery, server information as well as an event calender.</p>
-                </div>
-                <div class="joinus">
-                    <h2>Join our discord server!</h2>
-                    <a href="#"><img src="#"></a>
+                    <p>The No. 1 Discord server dedicated to Xbox Gamers. Find all XaC information here, including a gallery, server information as well as an event calender.</p>
+                    
+                    <h1 class="joinus">Join our discord server!</h1>
+                    <a href="#" class="discord"><img src="/images/discord.png" ></a>
                 </div>
             </div>
-        </content>
-        <footer></footer>
+            </content>
+        <footer>Created by Codewow, for the XaC community.</footer>
+        </wrapper>
+        <script> $('#info').on('click', function(){
+		$('#info-dropdown').slideToggle();
+		});</script>
     </body>
 </html>
